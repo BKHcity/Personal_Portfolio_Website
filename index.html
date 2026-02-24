@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">My Self</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Xin chào, tôi là <span class="highlight">Bùi Kim Hải</span>
+                    </h1>
+                    <p class="hero-subtitle">Sinh viên năm 4 Công nghệ Thông tin</p>
+                    <p class="hero-description">
+                        Tôi là một sinh viên đam mê chơi game, nghe nhạc, đôi khi procrastinate, và thích đọc sách. Tôi có kỹ năng viết Word, PPT, và luôn chịu khó tìm hiểu tài liệu, học hỏi kinh nghiệm từ các trang khác.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Liên hệ với tôi</a>
+                        <a href="#projects" class="btn btn-secondary">Xem dự án</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar-container">
+                        <div class="avatar"></div>
+                        <div class="avatar-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Về Tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Giới thiệu</h3>
+                    <p>
+                        Xin chào! Tôi là Bùi Kim Hải, một sinh viên năm 4 ngành Công nghệ Thông tin.
+                    </p>
+                    <p>
+                        Tôi đam mê chơi game, nghe nhạc, đôi khi procrastinate, và thích đọc sách. Tôi luôn chịu khó tìm hiểu tài liệu và học hỏi kinh nghiệm từ các trang khác nhau.
+                    </p>
+                    <h3>Giáo dục</h3>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Đại học Công Thương</strong>
+                            <span>Sinh viên năm 4 - Công nghệ Thông tin</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Dự án đã hoàn thành</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Khách hàng hài lòng</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Năm kinh nghiệm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ Năng</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Lập Trình & Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Công Cụ & Ngôn Ngữ</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Word & PPT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tiếng Việt</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tiếng Anh</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Dự Án</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">💼 Portfolio Web</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Trang Web Giới Thiệu Cá Nhân</h3>
+                        <p>Website responsive giới thiệu bản thân với thiết kế hiện đại, tích hợp form liên hệ và animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="https://github.com/BKHcity" class="project-link" target="_blank">Xem thêm →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱 Ứng Dụng</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dự Án Công Nghệ Thông Tin</h3>
+                        <p>Ứng dụng/hệ thống được phát triển trong quá trình học tập tại Đại học Công Thương, áp dụng kiến thức lập trình.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">Fullstack</span>
+                        </div>
+                        <a href="https://github.com/BKHcity" class="project-link" target="_blank">Xem thêm →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🎨 Thiết Kế</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Các Dự Án Học Tập Khác</h3>
+                        <p>Các bài tập, project nhỏ trong quá trình học tập, bao gồm: sử dụng công cụ Office, tìm hiểu tài liệu, và các project cá nhân.</p>
+                        <div class="project-tags">
+                            <span class="tag">Office</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                        <a href="https://github.com/BKHcity" class="project-link" target="_blank">Xem thêm →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Hãy liên hệ với tôi!</h3>
+                    <p>Tôi luôn sẵn sàng lắng nghe và hợp tác. Hãy gửi tin nhắn cho tôi qua các kênh sau:</p>
+                    <div class="contact-methods">
+                        <a href="mailto:buikimhai2.4@gmail.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>buikimhai2.4@gmail.com</span>
+                        </a>
+                        <a href="tel:0355587244" class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>0355587244</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/b%C3%B9i-kim-h%E1%BA%A3i-4b39b7373/" class="contact-item" target="_blank">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/BKHcity" class="contact-item" target="_blank">
+                            <span class="contact-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tên của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                    <div id="form-message" class="form-message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bùi Kim Hải. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
